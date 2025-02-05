@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>{% block title %}NIMBLE PRECISE - Unleash Genius{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-scholar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  </head>
+
+<body>
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="/" class="logo">
+                        <h1>NIMBLE PRECISE</h1>
+                    </a>
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="" class="">Home</a></li>
+                      <li class="scroll-to-section"><a href="about">About Us</a></li>
+                      <li class="scroll-to-section"><a href="courses">Courses</a></li>
+                      <li class="scroll-to-section"><a href="contact">Contact Us</a></li>
+                      {% comment %} <li class="scroll-to-section"><a href="registerpage">Register Now</a></li> {% endcomment %}
+                    </ul>   
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  {% block content %}{% endblock %}
+
+  <footer>
+    <div class="container">
+      <div class="row text-center">
+        <!-- Column 2: About Abacus -->
+        <div class="col-md-4">
+          <p class="" style="font-size: 1.3rem;"><strong>ABOUT US</strong></p>
+          <ul style="list-style-type: none; padding: 0;">
+            <li><a href="#" style="text-decoration: none; color: white;">Our Philosophy</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;">Team</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;">Success Stories</a></li>
+          </ul>
+        </div>
+        <!-- Column 3: Courses -->
+        <div class="col-md-4">
+          <p class="" style="font-size: 1.3rem;"><strong>COURSES</strong></p>
+          <ul style="list-style-type: none; padding: 0;">
+            <li><a href="#" style="text-decoration: none; color: white;">Beginner Level</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;">Intermediate Level</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;">Advanced Level</a></li>
+          </ul>
+        </div>
+        <!-- Column 4: Contact Us -->
+        <div class="col-md-4">
+          <p class="" style="font-size: 1.3rem;"><strong>CONTACT US</strong></p>
+          <ul style="list-style-type: none; padding: 0;">
+            <li><a href="mailto:info@abacuscourses.com" style="text-decoration: none; color: white;">info@nimbleprecise.com</a></li>
+            <li><a href="tel:+9876543210" style="text-decoration: none; color: white;">+987 654 3210</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;">45 Knowledge Lane, EduCity</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr style="border: 1px solid #555; margin: 20px 0;">
+      <!-- Footer Copyright Section -->
+      <div class="text-center">
+        <p style="font-size: 0.9rem; color: white;">
+          Copyright &copy; 2025 <b style="font-size: 1.1rem;">NIMBLE PRECISE</b>. All rights reserved.&nbsp;
+          <a href="#" rel="nofollow" target="_blank" style="text-decoration: none; color: white;">Designed and Developed by</a>
+          <a href="#" rel="nofollow" target="_blank" style="text-decoration: none; color: white;"><b style="font-size: 1.1rem;">InspireZest Technologies</b></a>
+        </p>
+      </div>
+    </div>
+  </footer>  
+
+  <!-- Scripts -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/isotope.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/counter.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+  </body>
+</html>

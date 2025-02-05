@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Courses | NIMBLE PRECISE
+{% endblock %}
+
+{% block content %}
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="header-text">
+            <h2 style="color: #fce240;font-size: 2.5rem;">Courses</h2>
+            <p style="font-size: 1rem; color: #6ad3ff;">
+              Home <i class="fa-solid fa-angles-right"></i> Courses
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Abacus Courses</h6>
+            <h2>Enhance Your Abacus Skills</h2>
+          </div>
+        </div>
+      </div>
+      <ul class="event_filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">Show All</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".beginner">Beginner</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".intermediate">Intermediate</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".advanced">Advanced</a>
+        </li>
+      </ul>
+      <div class="row event_box">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 beginner">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://images.pexels.com/photos/1019470/abacus-mathematics-addition-subtraction-1019470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /></a>
+              <span class="category">Beginner</span>
+              <span class="price"><h6><em>$</em>100</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Emma Johnson</span>
+              <h4>Introduction to Abacus</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 intermediate">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://media.istockphoto.com/id/948657976/photo/business-photos.jpg?s=612x612&w=0&k=20&c=2L6_i3gOn0nseZH-uRXG-RA8vo-EXUExuZnbhyhaaIk=" alt="" /></a>
+              <span class="category">Intermediate</span>
+              <span class="price"><h6><em>$</em>200</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Michael Brown</span>
+              <h4>Abacus Mental Math Techniques</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 advanced">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://img.freepik.com/premium-photo/business-colorful-counting-bead-abacus_62754-569.jpg" alt="" /></a>
+              <span class="category">Advanced</span>
+              <span class="price"><h6><em>$</em>300</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Sophia Lee</span>
+              <h4>Mastering Abacus Calculations</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 beginner">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://png.pngtree.com/background/20230425/original/pngtree-the-abacus-is-in-a-dark-closet-picture-image_2469061.jpg" alt="" /></a>
+              <span class="category">Beginner</span>
+              <span class="price"><h6><em>$</em>150</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">David Smith</span>
+              <h4>Fundamentals of Abacus</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 intermediate">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://picjumbo.com/wp-content/uploads/childrens-wooden-abacus.jpg" alt="" /></a>
+              <span class="category">Intermediate</span>
+              <span class="price"><h6><em>$</em>250</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Olivia Wilson</span>
+              <h4>Speed Calculation with Abacus</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 advanced">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://previews.123rf.com/images/choneschones/choneschones1706/choneschones170600017/80864811-close-up-abacus-on-white-background.jpg" alt="" /></a>
+              <span class="category">Advanced</span>
+              <span class="price"><h6><em>$</em>350</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Liam Martinez</span>
+              <h4>Pro-Level Abacus Training</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
