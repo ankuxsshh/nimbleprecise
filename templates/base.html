@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
 
 <body>
@@ -42,22 +44,24 @@
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <a href="/" class="logo">
+                    <a href="/" class="logo" data-aos="fade-left">
                         <h1>NIMBLE PRECISE</h1>
                     </a>
-                    <ul class="nav">
-                      <li class="scroll-to-section"><a href="" class="">Home</a></li>
+                    <ul class="nav" data-aos="fade-right"> 
+                      <li class="scroll-to-section"><a href="/" class="">Home</a></li>
                       <li class="scroll-to-section"><a href="about">About Us</a></li>
                       <li class="scroll-to-section"><a href="courses">Courses</a></li>
                       <li class="scroll-to-section"><a href="contact">Contact Us</a></li>
+                      <li class="scroll-to-section"><a href="blogsevents">Blogs & Events</a></li>
+                      {% comment %} <li class="scroll-to-section"><a href="contact">Contact Us</a></li> {% endcomment %}
                       {% comment %} <li class="scroll-to-section"><a href="registerpage">Register Now</a></li> {% endcomment %}
                     </ul>   
-                    <div class="search-input">
+                    {% comment %} <div class="search-input" data-aos="fade-right">
                       <form id="search" action="#">
                         <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
                         <i class="fa fa-search"></i>
                       </form>
-                    </div>
+                    </div> {% endcomment %}
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -75,29 +79,29 @@
       <div class="row text-center">
         <!-- Column 2: About Abacus -->
         <div class="col-md-4">
-          <p class="" style="font-size: 1.3rem;"><strong>ABOUT US</strong></p>
+          <p class="" data-aos="fade-right" style="font-size: 1.3rem;"><strong>ABOUT US</strong></p>
           <ul style="list-style-type: none; padding: 0;">
-            <li><a href="#" style="text-decoration: none; color: white;">Our Philosophy</a></li>
-            <li><a href="#" style="text-decoration: none; color: white;">Team</a></li>
-            <li><a href="#" style="text-decoration: none; color: white;">Success Stories</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;" data-aos="fade-left">Our Philosophy</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;" data-aos="fade-right">Team</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;" data-aos="fade-left">Success Stories</a></li>
           </ul>
         </div>
         <!-- Column 3: Courses -->
         <div class="col-md-4">
-          <p class="" style="font-size: 1.3rem;"><strong>COURSES</strong></p>
+          <p class="" data-aos="fade-left" style="font-size: 1.3rem;"><strong>COURSES</strong></p>
           <ul style="list-style-type: none; padding: 0;">
-            <li><a href="#" style="text-decoration: none; color: white;">Beginner Level</a></li>
-            <li><a href="#" style="text-decoration: none; color: white;">Intermediate Level</a></li>
-            <li><a href="#" style="text-decoration: none; color: white;">Advanced Level</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;" data-aos="fade-right">Beginner Level</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;" data-aos="fade-left">Intermediate Level</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;" data-aos="fade-right">Advanced Level</a></li>
           </ul>
         </div>
         <!-- Column 4: Contact Us -->
         <div class="col-md-4">
-          <p class="" style="font-size: 1.3rem;"><strong>CONTACT US</strong></p>
+          <p class="" data-aos="fade-right" style="font-size: 1.3rem;"><strong>CONTACT US</strong></p>
           <ul style="list-style-type: none; padding: 0;">
-            <li><a href="mailto:info@abacuscourses.com" style="text-decoration: none; color: white;">info@nimbleprecise.com</a></li>
-            <li><a href="tel:+9876543210" style="text-decoration: none; color: white;">+987 654 3210</a></li>
-            <li><a href="#" style="text-decoration: none; color: white;">45 Knowledge Lane, EduCity</a></li>
+            <li><a href="mailto:info@abacuscourses.com" style="text-decoration: none; color: white;"data-aos="fade-left">info@nimbleprecise.com</a></li>
+            <li><a href="tel:+9876543210" style="text-decoration: none; color: white;" data-aos="fade-right">+987 654 3210</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;" data-aos="fade-left">45 Knowledge Lane, EduCity</a></li>
           </ul>
         </div>
       </div>
@@ -120,6 +124,10 @@
   <script src="{% static 'js/owl-carousel.js' %}"></script>
   <script src="{% static 'js/counter.js' %}"></script>
   <script src="{% static 'js/custom.js' %}"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   </body>
 </html>

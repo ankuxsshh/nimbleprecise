@@ -19,3 +19,6 @@ def events(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def blogsevents(request):
+    return render(request, 'blogsevents.html')

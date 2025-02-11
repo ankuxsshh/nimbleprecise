@@ -327,7 +327,7 @@ Pre-loader Style
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #fce240;
+  background: #fce240; /* Default yellow color for the first dot */
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -350,8 +350,20 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #fce240;
+  background: #fce240; /* Default yellow color for additional dots */
   border-radius: 50%;
+}
+
+.preloader-inner .dots span:nth-child(1) {
+  background: #6ad3ff; /* First dot - yellow */
+}
+
+.preloader-inner .dots span:nth-child(2) {
+  background: #ff5e8f; /* Second dot - red */
+}
+
+.preloader-inner .dots span:nth-child(3) {
+  background: #7a6ad8; /* Third dot - blue */
 }
 
 /* 
@@ -361,8 +373,8 @@ Header Style
 */
 
 .background-header {
-  background-color: #ff5e8f !important;
-  border-radius: 0px 0px 50px 50px;
+  background-color: #013781 !important;
+  border-radius: 0px 0px 80px 0px;
   height: 110px !important;
   position: fixed !important;
   top: 0 !important;
@@ -424,7 +436,7 @@ Header Style
   background-color: rgba(255, 255, 255, 0.10);
   height: 44px;
   width: 250px;
-  border-radius: 23px;
+  border-radius: 25px;
   border: none;
   color: #fff;
   font-size: 14px;
@@ -470,11 +482,11 @@ Header Style
 
 .header-area .main-nav .nav li a {
   display: block;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 30px;
   border-radius: 20px;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
   height: 40px;
   line-height: 40px;
   text-transform: capitalize;
@@ -770,11 +782,11 @@ Banner Style
 
 .main-banner {
   background-color: #013781;
-  border-radius: 0px 0px 100px 0px;
+  border-radius: 0px 0px 0px 80px;
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 0px 120px 0px;
+  padding: 160px 0px 120px 0px;
 }
 
 .main-banner .item-1 {
@@ -803,7 +815,7 @@ Banner Style
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-radius: 20px;
   display: inline-block;
   margin-bottom: 50px;
@@ -816,10 +828,13 @@ Banner Style
   line-height: 70px;
   width: 60%;
   margin-bottom: 40px;
+  text-shadow: 2px 2px 5px #00000072;
 }
 
 .main-banner .item p {
   color: #fff;
+  font-size: 18px;
+  text-shadow: 2px 2px 5px #0000006e;
   width: 65%;
 }
 
