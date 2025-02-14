@@ -14,11 +14,8 @@ def courses(request):
 def team(request):
     return render(request, 'team.html')
 
-def events(request):
-    return render(request, 'events.html')
-
 def contact(request):
     return render(request, 'contact.html')
 
-def blogsevents(request):
-    return render(request, 'blogsevents.html')
+def blogs(request):
+    return render(request, 'blogs.html')
