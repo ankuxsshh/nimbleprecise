@@ -411,41 +411,21 @@ Header Style
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: inline-block;
+  width: auto;
+  height: 100px;
 }
 
-.header-area .main-nav .logo h1 {
-  font-size: 36px;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 600;
+.header-area .main-nav .logo img {
   margin-right: 20px;
   padding-right: 20px;
-  border-right: 1px solid rgba(250, 250, 250, 0.3);
+  width: auto;
+  height: 120px;
 }
 
-.background-header .main-nav .logo,
-.background-header .main-nav #search {
-  margin-top: 18px;
-}
-
-.header-area .main-nav #search {
-  position: relative;
-}
-
-.header-area .main-nav #search input {
-  background-color: rgba(255, 255, 255, 0.10);
-  height: 44px;
-  width: 250px;
-  border-radius: 25px;
-  border: none;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 300;
-  padding: 0px 20px 0px;
-}
-
-.header-area .main-nav #search input::placeholder {
-  color: rgba(250, 250, 250, 0.75);
+.background-header .main-nav .logo {
+  margin-bottom: 20px;
+  width: auto;
+  height: 100px;
 }
 
 .header-area .main-nav #search i {
@@ -806,7 +786,7 @@ Banner Style
   background-position: center center;
   background-size: cover;
   border-radius: 100px;
-  padding: 40px 80px;
+  padding: 50px 25px;
   margin-left: 0px;
 }
 
@@ -1177,11 +1157,6 @@ Courses Style
   align-items: center;
 }
 
-.events_item .down-content {
-  padding: 20px 30px 25px 30px;
-  height: 120px;
-}
-
 .events_item .down-content span.author {
   color: #7a6ad8;
   font-size: 15px;
@@ -1350,7 +1325,7 @@ Testimonials Style
 .testimonials {
   position: relative;
   padding: 80px 0px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .testimonials:before {
