@@ -669,8 +669,8 @@ Header Style
 
   .header-area .main-nav .logo {
     position: absolute;
-    left: 30px;
-    top: 0px;
+    left: 7px;
+    bottom: -24px;
   }
 
   .background-header .main-nav .logo {
@@ -939,7 +939,7 @@ Services Style
   margin-bottom: 30px;
   margin-right: 80px;
   transition: all .4s;
-  height: 400px;
+  height: 350px;
 }
 
 .services .service-item h4 {
@@ -1067,9 +1067,9 @@ Courses Style
 }
 
 .event_filter {
-  background-color: #6ad2ff67;
+  background-color: #6ad2ff81;
   border-radius: 50px;
-  padding: 15px 40px;
+  padding: 30px 60px;
   list-style: none;
   margin: 0 auto 60px;
   max-width: max-content;
@@ -1277,7 +1277,7 @@ Team Style
   padding: 140px 30px 40px 30px;
   background-color: #6ad3ff;
   text-align: center;
-  height: 300px;
+  height: 320px;
 }
 
 .team-member .main-content span.category {
@@ -2091,4 +2091,56 @@ body {
 
 .orange-button:hover {
   background-color: #d94b26;
+}
+
+/* Code of Honour Section Styles */
+.code-honour-section {
+  padding: 0px 0;
+}
+
+.code-honour-member {
+  margin-bottom: 30px;
+  line-height: 2;
+}
+
+.code-honour-icon-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  color: white;
+  font-size: 34px;
+  line-height: 2;
+}
+
+.bg-blue {
+  background-color: #007BFF;
+}
+
+.bg-green {
+  background-color: #28A745;
+}
+
+.bg-yellow {
+  background-color: #FFC107;
+}
+
+.bg-red {
+  background-color: #DC3545;
+}
+
+.main-content h4 {
+  margin-top: 10px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.main-content .category {
+  display: block;
+  font-size: 14px;
+  color: #373737;
+  line-height: 2;
 }
