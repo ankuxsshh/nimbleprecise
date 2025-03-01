@@ -2135,7 +2135,7 @@ body {
 .main-content h4 {
   margin-top: 10px;
   font-weight: bold;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .main-content .category {
@@ -2144,3 +2144,4 @@ body {
   color: #373737;
   line-height: 2;
 }
+
