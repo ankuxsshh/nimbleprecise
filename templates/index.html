@@ -71,7 +71,7 @@
           </div>
         </div>
       </div> {% endcomment %}
-      <ul class="event_filter" data-aos="fade-right">
+      <ul class="event_filter text-left" data-aos="fade-right">
         {% comment %} <li>
           <a class="is_active" href="#allcourses" data-filter="*">ALL COURSES</a>
         </li> {% endcomment %}
@@ -87,57 +87,53 @@
         <li>
           <a href="#!" data-filter=".techworld">TECH WORLD</a>
         </li>
-      </ul>
+      </ul>      
       <div class="row event_box">
         <div class="col-lg-3 col-md-6 mb-30 event_outer abacus">
-          <div class="events_item" data-aos="fade-right">
+          <div class="events_item" data-aos="fade-right" onclick="showOverlay('abacus')">
             <div class="thumb">
-              <a href="abacus"><img src="https://images.pexels.com/photos/1019470/abacus-mathematics-addition-subtraction-1019470.jpeg" alt="" /></a>
+              <a href="#"><img src="https://images.pexels.com/photos/1019470/abacus-mathematics-addition-subtraction-1019470.jpeg" alt="Abacus" /></a>
               <span class="category">ABACUS</span>
             </div>
-            <div class="down-content">
-              {% comment %} <span class="author">Emma Johnson</span> {% endcomment %}
-              {% comment %} <h4>ABACUS</h4> {% endcomment %}
-            </div>
           </div>
         </div>
+        
         <div class="col-lg-3 col-md-6 mb-30 event_outer vedicmaths">
-          <div class="events_item" data-aos="fade-right">
+          <div class="events_item" data-aos="fade-right" onclick="showOverlay('vedicmaths')">
             <div class="thumb">
-              <a href="vedicmaths"><img src="https://images.pexels.com/photos/6256258/pexels-photo-6256258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /></a>
+              <a href="#"><img src="https://images.pexels.com/photos/6256258/pexels-photo-6256258.jpeg" alt="Vedic Maths" /></a>
               <span class="category">VEDIC MATHS</span>
             </div>
-            <div class="down-content">
-              {% comment %} <span class="author">Michael Brown</span> {% endcomment %}
-              {% comment %} <h4>VEDIC MATHS</h4> {% endcomment %}
-            </div>
           </div>
         </div>
+      
         <div class="col-lg-3 col-md-6 mb-30 event_outer rubikscube">
-          <div class="events_item" data-aos="fade-right">
+          <div class="events_item" data-aos="fade-right" onclick="showOverlay('rubikscube')">
             <div class="thumb">
-              <a href="rubikscube"><img src="https://images.pexels.com/photos/6254929/pexels-photo-6254929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /></a>
+              <a href="#"><img src="https://images.pexels.com/photos/6254929/pexels-photo-6254929.jpeg" alt="Rubik's Cube" /></a>
               <span class="category">RUBIK'S CUBE</span>
             </div>
-            <div class="down-content">
-              {% comment %} <span class="author">Sophia Lee</span> {% endcomment %}
-              {% comment %} <h4>RUBIK'S CUBE</h4> {% endcomment %}
-            </div>
           </div>
         </div>
+      
         <div class="col-lg-3 col-md-6 mb-30 event_outer techworld">
-          <div class="events_item" data-aos="fade-right">
+          <div class="events_item" data-aos="fade-right" onclick="showOverlay('techworld')">
             <div class="thumb">
-              <a href="techworld"><img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /></a>
+              <a href="#"><img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" alt="Tech World" /></a>
               <span class="category">TECH WORLD</span>
-            </div>
-            <div class="down-content">
-              {% comment %} <span class="author">John Doe</span> {% endcomment %}
-              {% comment %} <h4>TECH WORLD</h4> {% endcomment %}
             </div>
           </div>
         </div>
       </div>
+      
+      <!-- Smooth Overlay -->
+      <div class="event-overlay" id="eventOverlay">
+        <div class="overlay-content">
+          <span class="close-btn" onclick="closeOverlay()">&times;</span>
+          <h2 id="overlayTitle"></h2>
+          <p id="overlayDescription"></p>
+        </div>
+      </div>      
     </div>
   </section>
 
